@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>precios</title>
+  <script src="controller.js"></script>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+
+<body>
+  <h2 align="center">PRECIOS PRODUCTOS</h2>
+   
+  
+  <div id="table">
+    <br/>
+    <table border="2" bordercolor="blue" cellspacing="5" cellpadding="5"> 
+                    <tr bgcolor="LightSalmon">
+     
+      <th align="center" width="100" >Nombre</th>
+        <th align="center" width="100"> Codigo</th>
+        <th align="center" width="100"> Categoria</th>
+        <th align="center" width="150">Attconsumidor</th>
+        <th align="center" width="150">CodigoBarra</th>
+	    <th align="center" width="100">Contenido</th>
+		<th align="center" width="100">Tipo</th>
+		<th align="center" width="100">Unidad</th>
+		<th align="center" width="100">Marca</th>
+		<th align="center" width="100">Proveedor</th>
+		<th align="center" width="100">Calidad</th>
+      </tr>
+      <tbody id="precios">
+      </tbody>
+    </table>
+    <br/>
+  </div>
+
+  
+  <input type="button" id="listar" value="Listar" onclick="loadData()" style="display:block">
+
+  <div hidden id="formprecios">
+    Nombre:
+    <input type="text" id="nombre" placeholder="Nombre" required/>
+    <br/> Codigo:
+    <input type="number" id="codigo" placeholder="Codigo" required/>
+    <br/> Categoria:
+    <input type="text" id="categoria" placeholder="Categoria" required/>
+    <br/> Attconsumidor:
+    <input type="text" id="attconsumidor" placeholder="Attconsumidor" required/>
+    <br/> CodigoBarra:
+    <input type="text" id="codigobarra" placeholder="CodigoBarra" required/>
+    <br/>Contenido:
+	<input type="number" id="contenido" placeholder="Contenido" required/>
+    <br/>Tipo:
+	<input type="text" id="tipo" placeholder="Tipo" required/>
+    <br/>Unidad:
+	<input type="text" id="unidad" placeholder="Unidad" required/>
+    <br/>Marca:
+	<input type="text" id="marca" placeholder="Marca" required/>
+    <br/>Proveedor:
+	<input type="text" id="proveedor" placeholder="Proveedor" required/>
+    <br/>Calidad:
+	<input type="text" id="calidad" placeholder="Calidad" required/>
+    <br/>
+    <input type="button" value="Editar" onclick="editData()" />
+  </div>
+</body>
+
+</html>
